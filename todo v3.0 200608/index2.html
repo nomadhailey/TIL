@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Todos 3.0</title>
+  <style>
+    .nav {
+      display: flex;
+      margin: 15px;
+      list-style: none;
+    }
+    .nav > li {
+      padding: 4px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .nav > li.active {
+      color: #fff;
+      background-color: #23b7e5;
+    }
+    .nav-state {
+      margin-left: 60px;
+    }
+  </style>
+</head>
+<body>
+  <ul class="nav">
+    <li id="all" class="active">All</li>
+    <li id="active">Active</li>
+    <li id="completed">Completed</li>
+  </ul>
+  <div class="nav-state">all</div>
+  <script>
+    const $nav = document.querySelector('.nav');
+    const $navState = document.querySelector('.nav-state');
+    // $nav.onclick = ({ target }) => {
+    //     console.log(target); // 이 때 ul이 잡힘
+    //     [...$nav.children].forEach(child => {
+    //         child.classList.toggle('active', child === target);
+    //     });
+    //     $navState.textContent = target.id;
+    // };
+    // 클릭은 항상 무조건 걸러줘야 함
+    // 첫번째 방법
+    // $nav.onclick = ({ target }) => {
+    //     if (!target.matches('.nav > li')) return;
+    //     [ ...$nav.children].forEach($navItem => {
+    //         $navItem.classList.toggle('active', target === $navItem);
+    //      // target === $navItem ? $navItem.classList.add('active') : $navItem.classList.remove('active');
+    //     });
+    //         $navState.textContent = target.id;
+    // };
+    // 두번째 방법_더 좋은 듯
+    $nav.onclick = ({ target }) => {
+        if (!target.matches('.nav > li')) return;
+        $nav.querySelector('.active').classList.remove('active');
+        target.classList.add('active');
+    };
+  </script>
+</body>
+</html>
