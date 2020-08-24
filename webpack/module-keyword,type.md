@@ -1,0 +1,42 @@
+# 1. 모듈 이해하기
+
+* CommonJS
+
+  * 모듈 가져오기 : `require(참조하고자 하는 모듈의 경로)`
+
+  * 모듈 내보내기
+
+    1)`module.exports={...}`
+
+    2) `module.exports=값`
+
+    3) `module.exports.키_이름=값`
+
+    4) `exports.키_이름=값` (module.exports의 축약형)
+
+    
+
+# 3. Module Keyword - 가져오기 (ESM)
+
+* ESM
+
+  * 모듈 가져오기 : `import 모듈_이름 from 모듈 위치`
+  * 모듈 내보내기 : `export` , `export default`
+
+* node.js 환경에서 ESM으로 모듈을 사용하기 위해 외부 모듈이 필요(왜냐하면 node.js는 기본적으로 commonJS 방식을 따르기 때문)
+
+  ```bash
+  npm i esm
+  node -r esm index.js
+  # -r : 노드 명령어를 실행할 때 실행하는 파일의 모듈 표준 중 commonJS 표준 말고 다른 모듈의 표준도 해석할 수 있게 설정해주는 역할 => 이 명령어를 입력하면 commonJS뿐만 아니라 ESM도 해석할 수 있음
+  ```
+
+
+
+# 4. 모듈의 종류
+
+1. Built-in Core Module(ex. Node.js module)
+2. Community-based Module(ex. NPM, ESM)
+   * npm CLI를 사용해야 함(ex. npm install ModuleName)
+3. Local Module(특정 프로젝트에 정의된 모듈)
+
