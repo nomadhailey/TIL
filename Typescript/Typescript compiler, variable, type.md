@@ -30,7 +30,7 @@ tsc hello.ts --target es6 --lib es2015,dom --module commonjs #타겟은 es6지�
 
 * tsconfig.json
 
-  프로젝트의 최상단 폴더에 위치하며, 파일을 생성하여 아래와 같이 입력
+  프로젝트의 최상단 폴더에 위치하며, 파일을 직접 생성하여 아래와 같이 입력
 
   ```json
   // tsconfig.json
@@ -50,10 +50,7 @@ tsc hello.ts --target es6 --lib es2015,dom --module commonjs #타겟은 es6지�
     }
   }
   
-```
-  
-  
-
+  ```
 ## 05. Chapter 01. TypeScript 시작하기 - 04. 변수선언
 
 * **함수 레벨 스코프 vs. 블록 레벨 스코프**
