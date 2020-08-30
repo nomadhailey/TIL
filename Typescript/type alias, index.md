@@ -44,21 +44,3 @@ let keys : keyof Props;
 
 * 출처 : https://dog-developers.tistory.com/200
 
-# 18. Ch 04. 실습 - 01. Parcel과 모듈
-
-* parcel-bundler 설치
-
-  ```bash
-  npm init -y
-  npm i parcel-bundler -D
-  ```
-
-  ```json
-  // package.json
-  
-  "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "dev" : "parcel index.html" // 프로젝트를 번들링할 때 시작이 되는 엔트리 포인트를 지정해줘야 함(index.html)
-    }, 
-  ```
-
