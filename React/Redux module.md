@@ -12,6 +12,16 @@
 
 * modules/counter.js
 
+* modules/todos.js
+
+  * ```javascript
+     {
+        id: 1,
+        text: '예시',
+        done: false
+      } 
+    ```
+
 ### 2) 루트 리듀서 만들기
 
 * modules/index.js
