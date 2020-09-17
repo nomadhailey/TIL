@@ -43,10 +43,12 @@ const imgArray = [
 * **질문 3)**
 
   아래 움짤(왼쪽 : 실제 인스타그램, 오른쪽 : 작업중인 코인스타그램)의 왼쪽처럼 fade-in, fade-out효과를 구현하기 위해 transition, animation 등을 사용해 opacity를 조절했으나, 사진이 바뀌는 시점과 opacity가 바뀌는 시점이 싱크가 안맞아서(동일하게 5초를 줘도) 따로 제 갈길 가는 문제 발생->css로 어떻게 구현하면 좋을까요?
+  
+
 
 # 상태 관리
 
-[그림]
+<img src="https://github.com/nomadhailey/TIL/blob/master/React/%EC%A7%88%EB%AC%B8/images/before.JPG"></img>
 
 * 변경 이유
 
