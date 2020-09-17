@@ -19,7 +19,7 @@ const imgArray = [
     if (index < imgArray.length) {
       rotateId = setInterval(() => setIndex(index + 1), 5000);
     } else {
-      // 질문 2) index가 5가 되면 이 else문이 실행되서 5가 아닌 0 이 찍혀야 할 것 같은데, 5가 찍히자마자 바로 0이 찍힘. 그 외에 1~4는 5초마다 순차적으로 찍힘
+      // 질문 2) index가 5가 되면 이 else문이 실행되서 5가 아닌 0 이 찍혀야 할 것 같은데, 5가 찍히자마자 바로 0이 찍힘. 그 외에 1~4는 5초마다 순차적으로 찍힘. 이 때문인지 4->0으로 교체되는 순간 찰나이지만 검은색 배경이 
       setInterval(setIndex(0), 5000); 
     }
       console.log(index);
@@ -44,11 +44,12 @@ const imgArray = [
 
   아래 움짤(왼쪽 : 실제 인스타그램, 오른쪽 : 작업중인 코인스타그램)의 왼쪽처럼 fade-in, fade-out효과를 구현하기 위해 transition, animation 등을 사용해 opacity를 조절했으나, 사진이 바뀌는 시점과 opacity가 바뀌는 시점이 싱크가 안맞아서(동일하게 5초를 줘도) 따로 제 갈길 가는 문제 발생->css로 어떻게 구현하면 좋을까요?
   
-
+ <img src="https://github.com/nomadhailey/TIL/blob/master/React/%EC%A7%88%EB%AC%B8/images/phoneImg.gif"></img> 
 
 # 상태 관리
 
 <img src="https://github.com/nomadhailey/TIL/blob/master/React/%EC%A7%88%EB%AC%B8/images/before.JPG"></img>
+<img src="https://github.com/nomadhailey/TIL/blob/master/React/%EC%A7%88%EB%AC%B8/images/after.JPG"></img>
 
 * 변경 이유
 
